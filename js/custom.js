@@ -119,13 +119,7 @@ $(window).on("scroll", function () {
         !1
       );
     }
-    document.addEventListener(
-      "contextmenu",
-      function (e) {
-        e.preventDefault();
-      },
-      !1
-    ),
+   
       document.addEventListener(
         "keydown",
         function (t) {
