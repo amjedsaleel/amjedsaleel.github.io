@@ -67,12 +67,12 @@ $(window).on("scroll", function () {
         );
       });
   }),
-  $(".img-zoom").magnificPopup({
-    type: "image",
-    closeOnContentClick: !0,
-    mainClass: "mfp-fade",
-    gallery: { enabled: !0, navigateByImgClick: !0, preload: [0, 1] },
-  }),
+//   $(".img-zoom").magnificPopup({
+//     type: "image",
+//     closeOnContentClick: !0,
+//     mainClass: "mfp-fade",
+//     gallery: { enabled: !0, navigateByImgClick: !0, preload: [0, 1] },
+//   }),
   $("#owl-demo").owlCarousel({
     autoPlay: 7e3,
     stopOnHover: !0,
