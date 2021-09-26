@@ -19,77 +19,33 @@ $("#status").fadeOut(),
   }),
   $("#navbarCollapse").scrollspy({ offset: 20 });
 var a = 0;
-$(window).on("scroll", function () {
-  var e = $("#counter").offset().top - window.innerHeight;
-  0 == a &&
-    $(window).scrollTop() > e &&
-    ($(".lan_fun_value").each(function () {
-      var e = $(this),
-        t = e.attr("data-count");
-      $({ countNum: e.text() }).animate(
-        { countNum: t },
-        {
-          duration: 2e3,
-          easing: "swing",
-          step: function () {
-            e.text(Math.floor(this.countNum));
-          },
-          complete: function () {
-            e.text(this.countNum);
-          },
-        }
-      );
-    }),
-    (a = 1));
-}),
-  $(window).on("load", function () {
-    var e = $(".work-filter"),
-      t = $("#menu-filter");
-    e.isotope({
-      filter: "*",
-      layoutMode: "masonry",
-      animationOptions: { duration: 750, easing: "linear" },
-    }),
-      t.find("a").on("click", function () {
-        var o = $(this).attr("data-filter");
-        return (
-          t.find("a").removeClass("active"),
-          $(this).addClass("active"),
-          e.isotope({
-            filter: o,
-            animationOptions: {
-              animationDuration: 750,
-              easing: "linear",
-              queue: !1,
-            },
-          }),
-          !1
-        );
-      });
-  }),
-//   $(".img-zoom").magnificPopup({
-//     type: "image",
-//     closeOnContentClick: !0,
-//     mainClass: "mfp-fade",
-//     gallery: { enabled: !0, navigateByImgClick: !0, preload: [0, 1] },
-//   }),
-  $("#owl-demo").owlCarousel({
-    autoPlay: 7e3,
-    stopOnHover: !0,
-    navigation: !1,
-    paginationSpeed: 1e3,
-    goToFirstSpeed: 2e3,
-    singleItem: !0,
-    autoHeight: !0,
-  }),
-  $(".blog_play").magnificPopup({
-    disableOn: 700,
-    type: "iframe",
-    mainClass: "mfp-fade",
-    removalDelay: 160,
-    preloader: !1,
-    fixedContentPos: !1,
-  }),
+  // $(window).on("load", function () {
+  //   var e = $(".work-filter"),
+  //     t = $("#menu-filter");
+  //   e.isotope({
+  //     filter: "*",
+  //     layoutMode: "masonry",
+  //     animationOptions: { duration: 750, easing: "linear" },
+  //   }),
+  //     t.find("a").on("click", function () {
+  //       var o = $(this).attr("data-filter");
+  //       return (
+  //         t.find("a").removeClass("active"),
+  //         $(this).addClass("active"),
+  //         e.isotope({
+  //           filter: o,
+  //           animationOptions: {
+  //             animationDuration: 750,
+  //             easing: "linear",
+  //             queue: !1,
+  //           },
+  //         }),
+  //         !1
+  //       );
+  //     });
+  // }),
+
+
   $(window).on("scroll", function () {
     $(this).scrollTop() > 100
       ? $(".back_top").fadeIn()
