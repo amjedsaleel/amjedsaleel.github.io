@@ -352,7 +352,7 @@ button:focus {
   height: 28px;
 }
 .home-bg {
-  background-image: url("../images/background.jpeg");
+  background-image: url("../images/background.webp");
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -427,7 +427,7 @@ button:focus {
   height: 100px;
   background: 0 0;
   background-size: 100% 100%;
-  background-image: url(../images/bottom-color.png);
+  background-image: url(../images/bottom-color.webp);
 }
 .clip-home {
   clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
@@ -495,12 +495,12 @@ button:focus {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.7);
 }
-.bg-funfact {
+/* .bg-funfact {
   position: relative;
   background-image: url(../images/img-1.jpg);
   background-size: cover;
   background-position: center center;
-}
+} */
 .cv_edu_exp {
   padding: 10px 0;
   position: relative;
